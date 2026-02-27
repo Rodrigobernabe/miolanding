@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Experiencias Web</title>
+
+  <!-- Google Fonts: Space Grotesk (Títulos) & Inter (Lectura) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Fondo Malla/Gradiente animado -->
+  <div class="bg-gradient-orb"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Header / Navegación -->
+  <header class="site-header">
+    <div class="logo">Dev.Studio</div>
+    <nav class="nav-links">
+      <a href="#" class="magnetic-btn-text">Inicio</a>
+      <a href="#proyectos" class="magnetic-btn-text">Trabajo</a>
+      <a href="#servicios" class="magnetic-btn-text">Soluciones</a>
+      <a href="#planes" class="magnetic-btn-text">Planes</a>
+      <a href="#contacto" class="btn-pill magnetic-btn">Hablemos</a>
+    </nav>
+  </header>
+
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <video class="hero-video" src="./videoHero.mp4" autoplay loop muted playsinline></video>
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            <span class="line-wrap"><span class="line-inner">Transformo ideas en</span></span>
+            <span class="line-wrap"><span class="text-accent shimmer-text line-inner">experiencias web</span></span>
+            <span class="line-wrap"><span class="line-inner">de alto impacto</span></span>
+          </h1>
+          <p class="hero-subtitle scrub-text">Ingeniería enfocada en resultados, con un diseño que desafía lo
+            convencional.</p>
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn-pill btn-primary liquid-btn magnetic-btn">Ver mis proyectos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trabajo Destacado (Bento Grid) -->
+      <section class="proyectos section-padding" id="proyectos">
+        <div class="section-header">
+          <h2 class="section-title">Trabajo Destacado</h2>
+          <p class="section-desc">Diseño interactivo y desarrollo de vanguardia.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Proyecto Principal (60%) -->
+          <div class="bento-item bento-main project-card">
+            <div class="project-image-container">
+              <div class="project-overlay"></div>
+              <div class="project-image"
+                style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2000&auto=format&fit=crop');">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Deportes</h3>
+              <p>Plataformas integrales para gimnasios, clubes y eventos deportivos.</p>
+              <div class="project-meta">
+                <span class="project-tag">Gestión + Reservas</span>
+                <a href="#" class="btn-outline liquid-btn magnetic-btn-text">Ver ejemplos &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyectos Secundarios (40%) -->
+          <div class="bento-side">
+            <div class="bento-item project-card">
+              <div class="project-image-container">
+                <div class="project-overlay"></div>
+                <div class="project-image"
+                  style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop');">
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Abogados</h3>
+                <p>Presencia digital profesional y sólida para estudios jurídicos.</p>
+                <div class="project-meta">
+                  <span class="project-tag">Legal Tech</span>
+                  <a href="#" class="btn-outline liquid-btn magnetic-btn-text">Ver ejemplos &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bento-item project-card">
+              <div class="project-image-container">
+                <div class="project-overlay"></div>
+                <div class="project-image"
+                  style="background-image: url('https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1000&auto=format&fit=crop');">
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Emprendedores</h3>
+                <p>Landing Pages orientadas a maximizar tus ventas.</p>
+                <div class="project-meta">
+                  <span class="project-tag">E-commerce</span>
+                  <a href="#" class="btn-outline liquid-btn magnetic-btn-text">Ver ejemplos &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mis Soluciones -->
+      <section class="servicios section-padding" id="servicios">
+        <div class="section-header">
+          <h2 class="section-title">Mis Soluciones</h2>
+          <p class="section-desc">Arquitectura digital para escalar tu visión.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass-card spotlight-card">
+            <div class="service-image-container">
+              <div class="service-image"
+                style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop');">
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Desarrollo Frontend Avanzado</h3>
+              <p class="service-p">Creación de interfaces fluidas, accesibles y altamente optimizadas utilizando las
+                últimas tecnologías web.</p>
+            </div>
+          </div>
+
+          <div class="service-card glass-card spotlight-card">
+            <div class="service-image-container">
+              <div class="service-image"
+                style="background-image: url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop');">
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Motion UI & Experiencias 3D</h3>
+              <p class="service-p">Integración de animaciones complejas con GSAP y WebGL para narrativas visuales
+                inmersivas.</p>
+            </div>
+          </div>
+
+          <div class="service-card glass-card spotlight-card">
+            <div class="service-image-container">
+              <div class="service-image"
+                style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop');">
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Consultoría Técnica</h3>
+              <p class="service-p">Auditorías de performance, arquitectura de proyectos y estrategias de escalabilidad
+                para startups.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planes de Inversión -->
+      <section class="planes section-padding" id="planes">
+        <div class="section-header">
+          <h2 class="section-title">Inversión y Planes</h2>
+          <p class="section-desc">Arquitectura escalable adaptada a tu etapa de crecimiento.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Tarjeta 1: Básico -->
+          <div class="pricing-card spotlight-card glass-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Landing Page</h3>
+              <p class="pricing-desc">Perfecto para validar una idea o capturar leads de forma efectiva.</p>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Diseño Single-Page (Hasta 5 secciones)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Optimización móvil estricta (Mobile First)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Integración con Analytics / Píxeles</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Formularios de captura de leads</span>
+              </li>
+            </ul>
+            <div class="pricing-footer">
+              <div class="pricing-eta">&gt; ETA: 1 a 2 semanas</div>
+              <a href="#contacto" class="btn-ghost liquid-btn magnetic-btn">Empezar Proyecto</a>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Institucional (Más Popular) -->
+          <div class="pricing-card spotlight-card glass-card pricing-popular">
+            <div class="pricing-badge">MÁS POPULAR</div>
+            <div class="pricing-header">
+              <h3 class="pricing-title">Institucional</h3>
+              <p class="pricing-desc">La presencia digital completa para estudios o pymes en crecimiento.</p>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Multi-Page (Inicio, Servicios, Nosotros, etc.)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Animaciones avanzadas con GSAP/Lenis</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>CMS Básico (Blog o Casos de Éxito)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>SEO On-Page optimizado (Core Web Vitals)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Revisión de Accesibilidad Premium</span>
+              </li>
+            </ul>
+            <div class="pricing-footer">
+              <div class="pricing-eta">&gt; ETA: 3 a 5 semanas</div>
+              <a href="#contacto" class="btn-solid liquid-btn magnetic-btn">Construir mi Web</a>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: E-Commerce / App -->
+          <div class="pricing-card spotlight-card glass-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">E-commerce Custom</h3>
+              <p class="pricing-desc">Solución a medida para ventas online con experiencias inmersivas 3D.</p>
+            </div>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Catálogo de productos escalable</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Integración de Pasarelas de Pago Globales</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Animaciones 3D WebGL (Three.js)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Panel Administrativo (Dashboard)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="feature-icon">
+                  <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Arquitectura Frontend Headless</span>
+              </li>
+            </ul>
+            <div class="pricing-footer">
+              <div class="pricing-eta">&gt; ETA: 6 a 10 semanas</div>
+              <a href="#contacto" class="btn-ghost liquid-btn magnetic-btn">Empezar Proyecto</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer / Contact CTA -->
+      <footer class="site-footer section-padding" id="contacto">
+        <div class="footer-content">
+          <h2 class="footer-title">¿Listo para elevar tu presencia digital?</h2>
+          <p class="footer-desc">Construyamos juntos algo que marque la diferencia.</p>
+          <div class="footer-cta">
+            <a href="mailto:hola@ejemplo.com" class="btn-pill btn-primary liquid-btn magnetic-btn">Iniciar Proyecto</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Dev.Studio. Todos los derechos reservados.</p>
+          <div class="social-links">
+            <a href="#" class="magnetic-btn-text">Twitter</a>
+            <a href="#" class="magnetic-btn-text">LinkedIn</a>
+            <a href="#" class="magnetic-btn-text">GitHub</a>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- /smooth-content -->
+  </main> <!-- /smooth-wrapper -->
+
+  <!-- Librerías de Animación y Scroll (vía CDN) -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Script Principal -->
+  <script defer src="./src/main.js"></script>
+</body>
+
+</html>

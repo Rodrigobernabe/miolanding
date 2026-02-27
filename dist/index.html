@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Experiencias Web</title>
+    
+    <!-- Google Fonts: Space Grotesk (Títulos) & Inter (Lectura) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" crossorigin src="/assets/index-BrwscGK5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-u9pTpSwq.css">
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Fondo Malla/Gradiente animado -->
+    <div class="bg-gradient-orb"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Header / Navegación -->
+    <header class="site-header">
+      <div class="logo">Dev.Studio</div>
+      <nav class="nav-links">
+        <a href="#proyectos" class="magnetic-btn-text">Trabajo</a>
+        <a href="#servicios" class="magnetic-btn-text">Soluciones</a>
+        <a href="#contacto" class="btn-pill magnetic-btn">Hablemos</a>
+      </nav>
+    </header>
+
+    <main id="smooth-wrapper">
+      <div id="smooth-content">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">
+              <span class="line-wrap"><span class="line-inner">Transformo ideas en</span></span>
+              <span class="line-wrap"><span class="text-accent shimmer-text line-inner">experiencias web</span></span>
+              <span class="line-wrap"><span class="line-inner">de alto impacto</span></span>
+            </h1>
+            <p class="hero-subtitle scrub-text">Ingeniería enfocada en resultados, con un diseño que desafía lo convencional.</p>
+            <div class="hero-cta">
+              <a href="#proyectos" class="btn-pill btn-primary magnetic-btn">Ver mis proyectos</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Trabajo Destacado (Bento Grid) -->
+        <section class="proyectos section-padding" id="proyectos">
+          <div class="section-header">
+            <h2 class="section-title">Trabajo Destacado</h2>
+            <p class="section-desc">Diseño interactivo y desarrollo de vanguardia.</p>
+          </div>
+          
+          <div class="bento-grid">
+            <!-- Proyecto Principal (60%) -->
+            <div class="bento-item bento-main project-card">
+              <div class="project-image-container">
+                <div class="project-overlay"></div>
+                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2000&auto=format&fit=crop');"></div>
+              </div>
+              <div class="project-info">
+                <h3>Plataforma Fintech</h3>
+                <p>Dashboard analítico con datos en tiempo real.</p>
+                <span class="project-tag">React + GSAP</span>
+              </div>
+            </div>
+
+            <!-- Proyectos Secundarios (40%) -->
+            <div class="bento-side">
+              <div class="bento-item project-card">
+                <div class="project-image-container">
+                  <div class="project-overlay"></div>
+                  <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop');"></div>
+                </div>
+                <div class="project-info">
+                  <h3>E-Commerce 3D</h3>
+                  <p>Experiencia de compra inmersiva.</p>
+                  <span class="project-tag">Three.js</span>
+                </div>
+              </div>
+
+              <div class="bento-item project-card">
+                <div class="project-image-container">
+                  <div class="project-overlay"></div>
+                  <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop');"></div>
+                </div>
+                <div class="project-info">
+                  <h3>Landing Page SaaS</h3>
+                  <p>Conversión optimizada con micro-interacciones.</p>
+                  <span class="project-tag">Vite + Lenis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mis Soluciones -->
+        <section class="servicios section-padding" id="servicios">
+          <div class="section-header">
+            <h2 class="section-title">Mis Soluciones</h2>
+            <p class="section-desc">Arquitectura digital para escalar tu visión.</p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card glass-card spotlight-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 22H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Desarrollo Frontend Avanzado</h3>
+              <p class="service-p">Creación de interfaces fluidas, accesibles y altamente optimizadas utilizando las últimas tecnologías web.</p>
+            </div>
+
+            <div class="service-card glass-card spotlight-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Motion UI & Experiencias 3D</h3>
+              <p class="service-p">Integración de animaciones complejas con GSAP y WebGL para narrativas visuales inmersivas.</p>
+            </div>
+
+            <div class="service-card glass-card spotlight-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Consultoría Técnica</h3>
+              <p class="service-p">Auditorías de performance, arquitectura de proyectos y estrategias de escalabilidad para startups.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer / Contact CTA -->
+        <footer class="site-footer section-padding" id="contacto">
+          <div class="footer-content">
+            <h2 class="footer-title">¿Listo para elevar tu presencia digital?</h2>
+            <p class="footer-desc">Construyamos juntos algo que marque la diferencia.</p>
+            <div class="footer-cta">
+              <a href="mailto:hola@ejemplo.com" class="btn-pill btn-primary magnetic-btn">Iniciar Proyecto</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2026 Dev.Studio. Todos los derechos reservados.</p>
+            <div class="social-links">
+              <a href="#" class="magnetic-btn-text">Twitter</a>
+              <a href="#" class="magnetic-btn-text">LinkedIn</a>
+              <a href="#" class="magnetic-btn-text">GitHub</a>
+            </div>
+          </div>
+        </footer>
+
+      </div> <!-- /smooth-content -->
+    </main> <!-- /smooth-wrapper -->
+
+  </body>
+</html>
